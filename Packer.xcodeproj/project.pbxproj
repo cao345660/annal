@@ -19,6 +19,7 @@
 		63E6D8E31CF1827600B1CA80 /* UIView+CaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E6D8E21CF1827600B1CA80 /* UIView+CaptureView.m */; };
 		63E6D8E61CF1829100B1CA80 /* UIScrollView+CaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E6D8E51CF1829100B1CA80 /* UIScrollView+CaptureView.m */; };
 		63E6D8E91CF1867300B1CA80 /* UIImage+GradualChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E6D8E81CF1867300B1CA80 /* UIImage+GradualChange.m */; };
+		E72428F21D11882B002C3C93 /* CalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E72428F11D11882B002C3C93 /* CalendarView.m */; };
 		E7438D781CFDB2FB001171D3 /* Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = E7438D771CFDB2FB001171D3 /* Hex.m */; };
 		E7E070C11D0A98310010FD4F /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E070C01D0A98310010FD4F /* UIBarButtonItem+Badge.m */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,8 @@
 		63E6D8E71CF1867300B1CA80 /* UIImage+GradualChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GradualChange.h"; sourceTree = "<group>"; };
 		63E6D8E81CF1867300B1CA80 /* UIImage+GradualChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GradualChange.m"; sourceTree = "<group>"; };
 		63E6D8EA1CF1891800B1CA80 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		E72428F01D11882B002C3C93 /* CalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarView.h; sourceTree = "<group>"; };
+		E72428F11D11882B002C3C93 /* CalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarView.m; sourceTree = "<group>"; };
 		E7438D761CFDB2FB001171D3 /* Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hex.h; sourceTree = "<group>"; };
 		E7438D771CFDB2FB001171D3 /* Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hex.m; sourceTree = "<group>"; };
 		E7438D791CFDB5A6001171D3 /* DefinesAll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefinesAll.h; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 				E7E070C01D0A98310010FD4F /* UIBarButtonItem+Badge.m */,
 				E7438D761CFDB2FB001171D3 /* Hex.h */,
 				E7438D771CFDB2FB001171D3 /* Hex.m */,
+				E72428F01D11882B002C3C93 /* CalendarView.h */,
+				E72428F11D11882B002C3C93 /* CalendarView.m */,
 				63E6D8E01CF1823600B1CA80 /* ViewCapture */,
 			);
 			name = UIView;
@@ -252,6 +257,7 @@
 				E7438D781CFDB2FB001171D3 /* Hex.m in Sources */,
 				631D4C0F1CED8CE4007CDBDA /* AppDelegate.m in Sources */,
 				631D4C231CED8D10007CDBDA /* NSTimer+Convenience.m in Sources */,
+				E72428F21D11882B002C3C93 /* CalendarView.m in Sources */,
 				63E6D8E91CF1867300B1CA80 /* UIImage+GradualChange.m in Sources */,
 				E7E070C11D0A98310010FD4F /* UIBarButtonItem+Badge.m in Sources */,
 				631D4C0C1CED8CE4007CDBDA /* main.m in Sources */,
