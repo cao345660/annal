@@ -40,11 +40,11 @@
     {
         _dayWidth                   = frame.size.width/8;
         _originX                    = (frame.size.width - 7*_dayWidth)/2;
-        _gregorian                  = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+        _gregorian                  = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
         _borderWidth                = 4;
         _originY                    = _dayWidth;
         _calendarDate               = [NSDate date];
-        _dayInfoUnits               = NSEraCalendarUnit | NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+        _dayInfoUnits               = NSCalendarUnitEra | NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
         
         _monthAndDayTextColor       = [UIColor brownColor];
         _dayBgColorWithoutData      = [UIColor whiteColor];
@@ -379,15 +379,15 @@
     
     components.day = 1;
     NSDate *firstDayOfMonth         = [_gregorian dateFromComponents:components];
-    NSDateComponents *comps         = [_gregorian components:NSWeekdayCalendarUnit fromDate:firstDayOfMonth];
+    NSDateComponents *comps         = [_gregorian components:NSCalendarUnitWeekday fromDate:firstDayOfMonth];
     
     NSInteger weekdayBeginning      = [comps weekday];  // Starts at 1 on Sunday
     weekdayBeginning -=2;
     if(weekdayBeginning < 0)
         weekdayBeginning += 7;                          // Starts now at 0 on Monday
     
-    NSRange days = [_gregorian rangeOfUnit:NSDayCalendarUnit
-                                    inUnit:NSMonthCalendarUnit
+    NSRange days = [_gregorian rangeOfUnit:NSCalendarUnitDay
+                                    inUnit:NSCalendarUnitMonth
                                    forDate:_calendarDate];
     
     NSInteger monthLength = days.length;
@@ -504,7 +504,7 @@
     NSDateComponents *previousMonthComponents = [_gregorian components:_dayInfoUnits fromDate:_calendarDate];
     previousMonthComponents.month --;
     NSDate *previousMonthDate = [_gregorian dateFromComponents:previousMonthComponents];
-    NSRange previousMonthDays = [_gregorian rangeOfUnit:NSDayCalendarUnit inUnit:NSMonthCalendarUnit forDate:previousMonthDate];
+    NSRange previousMonthDays = [_gregorian rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:previousMonthDate];
     NSInteger maxDate = previousMonthDays.length - weekdayBeginning;
     for (int i=0; i<weekdayBeginning; i++)
     {
